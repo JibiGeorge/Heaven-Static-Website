@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.50)), url(./images/sofa_image_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.comname {
+    font-size: 30px;
+    color: #fff;
+    font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    position: sticky;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+.nav_menu {
+    flex: 1;
+    text-align: right;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(148, 123, 123, 0.2) 25%);
+    font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+
+}
+
+.nav_menu ul li {
+    padding: 7px;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav_menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav_menu li a:hover {
+    color: red;
+}
+
+.search input {
+    height: 38px;
+    width: 200px;
+    font-family: 'Times New Roman';
+    background: transparent;
+    border: 1px solid rgb(250, 173, 29);
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-right: 0;
+    float: left;
+    padding-left: 10px;
+}
+
+.search input::placeholder {
+    color: rgb(100, 180, 117);
+    padding-left: 10px;
+}
+
+.search button {
+    width: 100px;
+    height: 40px;
+    background: orange;
+    border: 2px solid orange;
+    color: #fff;
+    font-size: 16px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search button:hover {
+    color: black;
+}
+
+.search button:focus {
+    outline: none;
+}
+
+.search input {
+    outline: none;
+}
+
+.main-content {
+    margin: 50px;
+    width: 100%;
+}
+
+.main-content .head {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 50%;
+}
+
+.main-content .head h2 {
+    font-size: 60px;
+    color: rgb(189, 167, 167);
+}
+
+.main-content p {
+    color: #fff;
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    font-size: 18px;
+
+}
+
+.main-content button {
+    width: 120px;
+    height: 45px;
+    background: orange;
+    border: 2px solid orange;
+    color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    box-shadow: 15px 0 15px rgb(136, 113, 0);
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
+
+.main-content button:hover {
+    background-color: black;
+    color: #fff;
+    border: 2px solid black;
+}
+
+.category {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.cat-title {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.cat-title h2{
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-size: 32px;
+}
+
+.cat-card {
+    margin: 0 50px 0 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.box{
+    margin: 0 20px 0 0;
+    height: auto;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+.cat-card .box img {
+    width: 300px;
+    height: 300px;
+}
+.product-name{
+    text-align: center;
+    margin: 5px 0 10px 0;
+}
+.product-name label{
+    font-size: 20px;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-weight: bold;
+}
+
+.selling{
+    width: 100%;
+    background-color: rgb(223, 211, 211);
+    padding: 20px;
+}
+.selling .title{
+    display: flex;
+    justify-content: center;
+}
+.selling .title h2{
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-size: 32px;
+}
+.selling-cards{
+    display: flex;
+    justify-content: center; 
+}
+.selling-cards .card{
+    width: 200px;
+    height: 200px;
+    margin: 0 20px 0 0;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+.selling-cards .card img{
+    width: 200px;
+    height: 200px;    
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.selling-cards .card img:hover{
+    opacity: 0.7;
+}
+.action img{
+    height: 50px;
+    width: 50px;
+    padding-right: 50px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.sell-container{
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer{
+    width: auto;
+    height: auto;
+    background-color: rgb(161, 185, 185);
+    padding: 25px;
+}
+.footer-items{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+}
+.menus{
+    padding: 10px 0 10px 20px;
+    font-size: 15px;
+}
+.footer .menus li{
+    list-style: none;
+    background-size: cover;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.social-media img{
+    height: 30px;
+    width: 30px;
+}
+.social-media ul{
+    padding: 10px 10px 0 0;
+    display: flex;
+}
+.social-media ul li{
+    padding: 10px;
+    object-fit: cover;
+}
+.copy-right{
+    background: black;
+    width: 100%;
+    color: #fff;
+    padding: 5px 0 5px 25px;
+    font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    text-align: center;
+}
